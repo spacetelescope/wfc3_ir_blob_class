@@ -183,7 +183,7 @@ def scale_data(data, factor=0.5):
     We determine our clipping min and max by using a fraction of vmin and
     vmax. It can be empirically shown that 0.3, 0.5 and 0.6 of vmin/vmax
     contains approximately +/- 2, 3, and 4 standard deviations of the data
-    centered around the mean. The borders of the IR images mostly contains
+    centered around the median. The borders of the IR images mostly contains
     nonfinite values so changing their pixel values to the median is beneficial
     for data processing.
 
@@ -239,7 +239,7 @@ def scale_data(data, factor=0.5):
     # Check all inf/nan values have been changed
     check_mask = (np.abs(data_clip) == np.inf) | np.isnan(data_clip)
     if list(data_clip[check_mask]):
-        print ('Nonfinite values still remian before normalization.')
+        print ('Nonfinite values still remain before normalization.')
     else:
         print ('Nonfinite values before normalizing have been changed.')
 
