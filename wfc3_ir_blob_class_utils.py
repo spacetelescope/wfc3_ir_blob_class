@@ -195,7 +195,7 @@ def scale_data(data, factor=0.5):
     factor : float
         The fraction of vmin/vmax to use for clipping. Factors of 0.3, 0.5, and
         0.6 keep approximately 95%, 99.7%, and 99.994% of the data centered
-        around the mean. The lower the factor, the stronger the clipping effect
+        around the median. The lower the factor, the stronger the clipping effect
         will be.
 
     Returns
