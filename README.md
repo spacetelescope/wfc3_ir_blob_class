@@ -1,5 +1,7 @@
-WFC3 IR Blob Classification Project
+WFC3 IR Blob Classification Project (DEPRECATED)
 ---------------------
+
+**This repository is superseded by [deepwfc3](https://github.com/spacetelescope/deepwfc3). The exact contents of this library may be found under `projects/ir_blob`. Please do not use this repository; it only exists for legacy reasons.**
 
 This repository contains the IPython Notebooks, data, and script needed to build WFC3's IR Blob Classifier. The purpose of this project is to automate the WFC3 Quicklook CSM monitor. The classifier will take subframes from a 1024x1024 IR blob difference image and predict if there is a prominent blob on the subframe. The Quicklook team will then be notified and record where new blobs appear over time.
 
